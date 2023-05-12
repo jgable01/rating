@@ -7,7 +7,7 @@ function Dialog(props) {
     <div className={`popUp ${props.visible ? "hide" : ""}`}>
       <input
         type="button"
-        className={`dialogBtn ${props.visible ? "hide" : ""}`}
+        className={`dialogBtn ${props.visible ? "" : "hide"}`}
         value="Open Dialog"
         onClick={props.toggle}
       />
