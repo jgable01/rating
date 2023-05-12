@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Style/index.css";
+import React from "react";
+import Star from "./Components/Star";
+import StarRating from "./Components/StarRating";
+import Dialog from "./Components/Dialog";
+import { useState } from "react";
+
+
 
 function App() {
+  const [visible, setVisible] = useState(true);
+  function handleClick() {
+    setVisible(!visible);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="ratings">
+        <StarRating />
+      </div>
+      <div className="dialog">
+        <Dialog toggle={handleClick} visible={visible}/>
+      </div>
     </div>
   );
 }

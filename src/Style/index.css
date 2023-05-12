@@ -1,0 +1,143 @@
+
+html, body, #app, #app>div {
+  height: 100%
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(37, 37, 37);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  width: min(100% - 30px, 1280px);
+  margin-inline: auto;
+  height: 100vh;
+  display: flex;
+}
+
+.star {
+  width: 20px;
+}
+
+.star  {
+  color: yellow;
+}
+
+.star:hover {
+  cursor: pointer;
+}
+
+#root {
+  height: 100%;
+}
+
+input[type=button] {
+  display: inline-flex;
+  width: 140px;
+  height: 48px;
+  text-align: center;
+  background-color: rgb(83, 83, 248);
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.4;
+  cursor: pointer;
+  padding: 15px 15px;
+  margin: 15px 0 15px 15px;
+}
+
+input[type=button].dialogBtn {
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  width: 155px;
+  border-radius: 50px;
+  background-color: rgb(83, 83, 248);
+}
+
+
+.hide {
+  display: none;
+}
+
+.popUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  width: 40rem;
+  margin: 0 1.5rem;
+  padding: 2.5rem 1.3rem;
+  background-color: #46474d;
+  border-radius: 8px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.head {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  font-weight: normal;
+  letter-spacing: 0.45rem;
+  margin-bottom: 2.6rem;
+  color: #fff;
+}
+
+.button {
+  margin-top: 2.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 100rem;
+  color: #fff;
+  background: rgb(83, 83, 248);
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.ratings {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.stars-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  width: 50%;
+  font-size: 75px;
+}
+
+
+
